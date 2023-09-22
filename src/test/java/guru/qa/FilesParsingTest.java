@@ -84,7 +84,7 @@ public class FilesParsingTest {
     }
 
     @Test
-    @DisplayName("JSON-файл, рассшипенный тест (pojo)")
+    @DisplayName("JSON-файл, расширенный тест (pojo)")
     void jsonParseWithModelTest() throws Exception {
         Gson gson = new Gson();
         try (
