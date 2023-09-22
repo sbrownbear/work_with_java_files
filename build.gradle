@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'guru.qa'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.8.1', // Junit5
+            'com.codeborne:selenide:6.18.0', // Selenide
+            'org.assertj:assertj-core:3.23.1', // Assert
+            'com.codeborne:pdf-test:1.5.0', // PDF-файл
+            'com.codeborne:xls-test:1.4.3', // XLS-файл
+            'com.opencsv:opencsv:5.7.1', // CSV-файл
+            'com.google.code.gson:gson:2.10' // JSON-файл
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
